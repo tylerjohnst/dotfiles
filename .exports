@@ -1,0 +1,2 @@
+# .zsh-history Length
+EXPORT HISTSIZE=1000000

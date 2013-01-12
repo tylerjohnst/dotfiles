@@ -36,9 +36,10 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
-
+# Setup rbenv
 eval "$(rbenv init -)"
 
-alias ls='ls -alhG'
+# Load Custom dotfiles
+for file in ~/.dotfiles/.{path,exports,aliases,functions}; do
+	[ -r "$file" ] && source "$file"
+done

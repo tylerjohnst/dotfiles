@@ -2,5 +2,10 @@
 
 echo 'Setting up dotfiles.'
 
-ln -sf .zshrc ~/.zshrc
-ln -sf theme.zsh ~/.oh-my-zsh/themes/custom.zsh-theme
+ln -f .zshrc ~/.zshrc
+ln -f theme.zsh-theme ~/.oh-my-zsh/themes/custom.zsh-theme
+
+for file in .{gitattributes,gitconfig}; do
+	echo "$file"
+	[ -r "$file" ] && ln -f $file ~/$file
+done
