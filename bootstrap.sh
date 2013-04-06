@@ -2,7 +2,7 @@
 
 echo 'Setting up dotfiles.'
 
-for file in .{zshrc,gitattributes,gitconfig,gitignore}; do
+for file in .{zshrc,vimrc,gitignore}; do
 	echo "$file"
 	[ -r "$file" ] && ln -f $file ~/$file
 done
