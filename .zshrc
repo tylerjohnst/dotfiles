@@ -32,14 +32,16 @@ ZSH_THEME="custom"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git osx heroku brew rake)
 
 source $ZSH/oh-my-zsh.sh
-
-# Setup rbenv
-eval "$(rbenv init -)"
 
 # Load Custom dotfiles
 for file in ~/.dotfiles/.{path,exports,aliases,functions}; do
 	[ -r "$file" ] && source "$file"
 done
+
+source ~/.private_exports
+
+# Setup rbenv
+eval "$(rbenv init -)"
