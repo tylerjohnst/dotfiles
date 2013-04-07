@@ -44,4 +44,4 @@ done
 source ~/.private_exports
 
 # Setup rbenv
-eval "$(rbenv init -)"
+eval "$(rbenv init - `which zsh`)"

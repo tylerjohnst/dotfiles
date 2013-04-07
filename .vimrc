@@ -13,17 +13,25 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-haml'
 Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'vim-scripts/taglist.vim'
+Bundle 'janx/vim-rubytest'
 
 filetype plugin indent on
 
-syntax on
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|bundle)$'
+
+syntax  on
+
+let g:rubytest_cmd_spec = "bundle exec rspec %p"
+let g:rubytest_cmd_example = "bundle exec rspec %p -l '%c'"
 
 set showmode                    " always show what mode we're currently editing in
 set nowrap                      " don't wrap lines
-set tabstop=4                   " a tab is four spaces
-set softtabstop=4               " when hitting <BS>, pretend like a tab is removed, even if spaces
+set tabstop=2                   " a tab is four spaces
+set softtabstop=2               " when hitting <BS>, pretend like a tab is removed, even if spaces
 set expandtab                   " expand tabs by default (overloadable per file type later)
-set shiftwidth=4                " number of spaces to use for autoindenting
+set shiftwidth=2                " number of spaces to use for autoindenting
 set shiftround                  " use multiple of shiftwidth when indenting with '<' and '>'
 set backspace=indent,eol,start  " allow backspacing over everything in insert mode
 set autoindent                  " always set autoindenting on
@@ -56,4 +64,5 @@ set formatoptions+=1            " When wrapping paragraphs, don't end lines
 set nrformats=                  " make <C-a> and <C-x> play well with
                                 "    zero-padded numbers (i.e. don't consider
                                 "    them octal or hex)
-
+set cursorline                  " Highlight the cursor line
+highlight CursorLine ctermbg=black cterm=NONE

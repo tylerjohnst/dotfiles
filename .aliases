@@ -1,6 +1,7 @@
 # Rails development stuff
 alias bx="bundle exec"
 alias fs="foreman start -f Procfile.dev"
+alias vim='mvim -v'
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
