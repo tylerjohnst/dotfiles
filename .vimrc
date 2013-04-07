@@ -22,6 +22,8 @@ filetype plugin indent on
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|bundle)$'
 
 syntax  on
+set background=dark
+colorscheme solarized
 
 let g:rubytest_cmd_spec = "bundle exec rspec %p"
 let g:rubytest_cmd_example = "bundle exec rspec %p -l '%c'"
