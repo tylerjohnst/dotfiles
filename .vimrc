@@ -16,7 +16,6 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-haml'
 Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'Valloric/YouCompleteMe'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'janx/vim-rubytest'
 Bundle 'Lokaltog/powerline'
@@ -24,6 +23,7 @@ Bundle 'mileszs/ack.vim'
 Bundle 'scrooloose/nerdcommenter'
 
 filetype plugin indent on
+let NERDSpaceDelims=1
 
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|bundle)$'
 let g:ctrlp_prompt_mappings = {
@@ -85,7 +85,8 @@ set laststatus=2
 set encoding=utf-8              " UTF-8 for the win?
 set number                      " show absolute line numbers
 set cursorline
+
 highlight CursorLine ctermbg=black cterm=NONE
 
 autocmd! BufWrite * mark ' | silent! %s/\s\+$// | norm ''
-
+autocmd BufWritePost * cal ctrlp#clra()                     " Refresh ctrlp buffer on save
