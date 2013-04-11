@@ -13,35 +13,43 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
-Bundle 'tpope/vim-haml'
-Bundle 'pangloss/vim-javascript'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'vim-scripts/taglist.vim'
-Bundle 'janx/vim-rubytest'
-Bundle 'Lokaltog/powerline'
-Bundle 'mileszs/ack.vim'
-Bundle 'scrooloose/nerdcommenter'
 
-filetype plugin indent on
-let NERDSpaceDelims=1
-
+autocmd BufWritePost * cal ctrlp#clra() " Refresh ctrlp buffer on save
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|bundle)$'
 let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<c-t>'],
     \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
     \ }
 
-syntax on
-set background=dark
-colorscheme solarized
+Bundle 'tpope/vim-haml'
+Bundle 'pangloss/vim-javascript'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'vim-scripts/taglist.vim'
+Bundle 'janx/vim-rubytest'
 
 let g:rubytest_cmd_spec = "zeus rspec %p"
 let g:rubytest_cmd_example = "zeus rspec %p -l '%c'"
 "let g:rubytest_cmd_spec = "bundle exec rspec %p"
 "let g:rubytest_cmd_example = "bundle exec rspec %p -l '%c'"
 
+Bundle 'Lokaltog/powerline'
+
 set guifont=Menlo\ for\ Powerline:h14
 let g:Powerline_symbols = 'fancy'
+
+Bundle 'mileszs/ack.vim'
+Bundle 'scrooloose/nerdcommenter'
+
+let NERDSpaceDelims=1
+
+syntax on
+filetype plugin indent on
+set background=dark
+colorscheme solarized
+set cursorline
+highlight CursorLine ctermbg=black cterm=NONE
+
+autocmd! BufWrite * mark ' | silent! %s/\s\+$// | norm '' " Clear trailing whitespace on save
 
 set showmode                    " always show what mode we're currently editing in
 set nowrap                      " don't wrap lines
@@ -83,9 +91,4 @@ set nrformats=                  " make <C-a> and <C-x> play well with
 set laststatus=2
 set encoding=utf-8              " UTF-8 for the win?
 set number                      " show absolute line numbers
-set cursorline
 
-highlight CursorLine ctermbg=black cterm=NONE
-
-autocmd! BufWrite * mark ' | silent! %s/\s\+$// | norm ''
-autocmd BufWritePost * cal ctrlp#clra()                     " Refresh ctrlp buffer on save
