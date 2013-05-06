@@ -6,10 +6,8 @@ let mapleader="," " Remap leader to ','
 set rtp+=~/.vim/bundle/vundle/
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
-call vundle#rc()
+call vundle#rc() " Initialize vundle
 
-" let Vundle manage Vundle
-" required!
 
 Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
@@ -32,22 +30,25 @@ let g:rubytest_cmd_example = "zeus rspec %p -l '%c'"
 "let g:rubytest_cmd_spec = "bundle exec rspec %p"
 "let g:rubytest_cmd_example = "bundle exec rspec %p -l '%c'"
 
-Bundle 'Lokaltog/powerline'
-
-set guifont=Menlo\ for\ Powerline:h14
-let g:Powerline_symbols = 'fancy'
-
 Bundle 'mileszs/ack.vim'
 Bundle 'scrooloose/nerdcommenter'
 
 let NERDSpaceDelims=1
 
+Bundle 'terryma/vim-multiple-cursors'
+Bundle 'rking/vim-detailed'
+Bundle 'Lokaltog/powerline'
+Bundle 'guns/xterm-color-table.vim'
+
+set guifont=Menlo\ for\ Powerline:h14
+let g:Powerline_symbols = 'fancy'
+
 syntax on
 filetype plugin indent on
-set background=dark
-colorscheme solarized
+colo detailed
+
 set cursorline
-highlight CursorLine ctermbg=black cterm=NONE
+highlight CursorLine term=underline guibg=#1c1c1c cterm=underline
 
 autocmd! BufWrite * mark ' | silent! %s/\s\+$// | norm '' " Clear trailing whitespace on save
 
@@ -69,7 +70,6 @@ set smartcase                   " ignore case if search pattern is all lowercase
 set smarttab                    " insert tabs on the start of a line according to
                                 "    shiftwidth, not tabstop
 set scrolloff=4                 " keep 4 lines off the edges of the screen when scrolling
-set hlsearch                    " highlight search terms
 set incsearch                   " show search matches as you type
 set gdefault                    " search/replace "globally" (on a line) by default
 set listchars=tab:▸\ ,trail:·,extends:#,nbsp:·
