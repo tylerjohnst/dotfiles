@@ -1,5 +1,4 @@
 PROMPT='%{$fg[white]%}  '
-# RPS1='%{$fg[blue]%}%~%{$reset_color%} '
 RPS1='%{$fg[white]%}%2~$(git_prompt_info) : %{$fg[blue]%}%m%{$reset_color%}'
 
 ZSH_THEME_GIT_PROMPT_PREFIX=" %{$fg[yellow]%}("
