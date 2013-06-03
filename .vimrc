@@ -21,6 +21,7 @@ let g:ctrlp_prompt_mappings = {
 
 Bundle 'tpope/vim-haml'
 Bundle 'pangloss/vim-javascript'
+Bundle 'briancollins/vim-jst'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'janx/vim-rubytest'
@@ -38,7 +39,6 @@ let NERDSpaceDelims=1
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'rking/vim-detailed'
 Bundle 'Lokaltog/powerline'
-Bundle 'guns/xterm-color-table.vim'
 
 set guifont=Menlo\ for\ Powerline:h14
 let g:Powerline_symbols = 'fancy'
