@@ -50,6 +50,8 @@ colo detailed
 set cursorline
 highlight CursorLine term=underline guibg=#1c1c1c cterm=underline
 
+au BufRead,BufNewFile *.rabl setf ruby    " Rabl syntax highlighting
+
 autocmd! BufWrite * mark ' | silent! %s/\s\+$// | norm '' " Clear trailing whitespace on save
 
 set showmode                    " always show what mode we're currently editing in
