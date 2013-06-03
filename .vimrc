@@ -25,8 +25,8 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'janx/vim-rubytest'
 
-let g:rubytest_cmd_spec = "zeus rspec %p"
-let g:rubytest_cmd_example = "zeus rspec %p -l '%c'"
+let g:rubytest_cmd_spec = "zeus rspec %p | more"
+let g:rubytest_cmd_example = "zeus rspec %p -l '%c' | more"
 "let g:rubytest_cmd_spec = "bundle exec rspec %p"
 "let g:rubytest_cmd_example = "bundle exec rspec %p -l '%c'"
 
