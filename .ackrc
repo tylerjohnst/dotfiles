@@ -4,3 +4,5 @@ html=.haml
 css=.sass,.scss
 --type-add
 js=.coffee
+--ignore-dir=.bundle
+--ignore-dir=vendor
