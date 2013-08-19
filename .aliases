@@ -2,6 +2,7 @@
 alias bx="bundle exec"
 alias fs="foreman start -f Procfile.dev"
 alias vim='mvim'
+alias bxr="nocorrect bundle exec rspec"
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."

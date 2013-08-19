@@ -20,6 +20,7 @@ let g:ctrlp_prompt_mappings = {
     \ }
 
 Bundle 'tpope/vim-haml'
+Bundle 'lunaru/vim-less'
 Bundle 'pangloss/vim-javascript'
 Bundle 'briancollins/vim-jst'
 Bundle 'kchmck/vim-coffee-script'
