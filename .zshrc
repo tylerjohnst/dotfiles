@@ -47,3 +47,7 @@ source ~/.private_exports
 eval "$(rbenv init - `which zsh`)"
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh_plugins/rbenv.zsh
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
