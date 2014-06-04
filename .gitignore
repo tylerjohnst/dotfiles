@@ -13,3 +13,8 @@ Thumbs.db
 # Files that might appear on external disks
 .Spotlight-V100
 .Trashes
+
+# Dependency manager related things
+node_modules/
+.bundle/
+bower_components/
