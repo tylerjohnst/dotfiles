@@ -1,7 +1,6 @@
 # Rails development stuff
 alias bx="bundle exec"
 alias fs="foreman start -f Procfile.dev"
-alias vim='mvim'
 alias bxr="nocorrect bundle exec rspec"
 alias zrs="nocorrect zeus rspec"
 
@@ -39,7 +38,7 @@ alias localip="ipconfig getifaddr en1"
 alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
 
 # Always use color output for `ls`
-alias ls="command ls -alhGa@e"
+alias ls="command ls -alhG"
 
 # List only directories
 alias lsd='ls | grep "^d"'
