@@ -1,7 +1,4 @@
 set nocompatible
-filetype off
-
-let mapleader = ","
 
 "--* VUNDLE BEGIN
 filetype off
@@ -21,6 +18,8 @@ call vundle#end()
 syntax on
 filetype plugin indent on
 colorscheme detailed
+
+let mapleader = ","
 
 " Clear trailing whitespace on save
 autocmd! BufWrite * mark ' | silent! %s/\s\+$// | norm ''
