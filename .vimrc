@@ -25,6 +25,7 @@ colorscheme detailed
 " Clear trailing whitespace on save
 autocmd! BufWrite * mark ' | silent! %s/\s\+$// | norm ''
 
+" Highlight the cursor line
 set cursorline
 highlight CursorLine term=underline guibg=#1c1c1c cterm=underline
 
