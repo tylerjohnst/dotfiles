@@ -43,14 +43,13 @@ done
 
 source ~/.private_exports
 
-# Setup rbenv
-eval "$(rbenv init - `which zsh`)"
-
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.zsh_plugins/rbenv.zsh
+source ~/.zsh_plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Setup direnv
 eval "$(direnv hook zsh)"
+
+# Setup rbenv
+eval "$(rbenv init -)"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
