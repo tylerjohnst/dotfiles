@@ -8,5 +8,5 @@ for file in .{zshrc,vimrc,gitignore,rspec,gemrc,irbrc,ackrc,jshintrc}; do
 done
 
 touch ~/.private_exports
-mkdir ~/.vim
+mkdir -p ~/.vim/swap
 ln -f theme.zsh-theme ~/.oh-my-zsh/themes/custom.zsh-theme
