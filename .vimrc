@@ -13,6 +13,11 @@ Plugin 'rking/vim-detailed'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/syntastic'
 
 call vundle#end()
 "--* VUNDLE END
