@@ -1,8 +1,14 @@
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+
 # Rails development stuff
 alias bx="bundle exec"
 alias fs="foreman start -f Procfile.dev"
 alias bxr="nocorrect bundle exec rspec"
 alias zrs="nocorrect zeus rspec"
+
+# Postgres
+alias pgu="launchctl load /usr/local/opt/postgresql/homebrew.mxcl.postgresql.plist"
+alias pgd="launchctl unload /usr/local/opt/postgresql/homebrew.mxcl.postgresql.plist"
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
@@ -38,11 +44,10 @@ alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias localip="ipconfig getifaddr en1"
 alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
 
 # Always use color output for `ls`
-alias ls="command ls -alhG"
+alias ls="command ls -alhG | grep -v .DS_Store"
 
 # List only directories
 alias lsd='ls | grep "^d"'

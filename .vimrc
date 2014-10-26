@@ -32,10 +32,13 @@ let mapleader = ","
 let NERDSpaceDelims=1
 
 " Ctrlp
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|bundle)|vendor$'
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|bundle)|vendor|build|node_modules|\.(png|jpg|jpeg|gif)'
 
 " Clear trailing whitespace on save
 autocmd! BufWrite * mark ' | silent! %s/\s\+$// | norm ''
+
+" Refresh ctrlp buffer on save
+autocmd BufWritePost * cal ctrlp#clra()
 
 " Highlight the cursor line
 set cursorline
