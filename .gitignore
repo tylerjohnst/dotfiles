@@ -18,3 +18,5 @@ Thumbs.db
 node_modules/
 .bundle/
 bower_components/
+
+*.sublime-workspace
