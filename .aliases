@@ -10,6 +10,10 @@ alias zrs="nocorrect zeus rspec"
 alias pgu="launchctl load /usr/local/opt/postgresql/homebrew.mxcl.postgresql.plist"
 alias pgd="launchctl unload /usr/local/opt/postgresql/homebrew.mxcl.postgresql.plist"
 
+# MySQL
+alias msu="mysql.server start"
+alias msd="mysql.server stop"
+
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
@@ -53,4 +57,3 @@ alias ls="command ls -alhG | grep -v .DS_Store"
 alias lsd='ls | grep "^d"'
 
 # export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
-
