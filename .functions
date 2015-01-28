@@ -4,6 +4,11 @@ function call() {
   open "tel://$NUMBER"
 }
 
+function sublp() {
+  PROJECT=`ls | grep .sublime-project | awk '{ print $9 }' | head`
+  subl --project $PROJECT
+}
+
 # Simple calculator
 function calc() {
 	local result=""
