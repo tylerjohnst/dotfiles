@@ -10,6 +10,3 @@ done
 touch ~/.private_exports
 mkdir -p ~/.vim/swap
 ln -f theme.zsh-theme ~/.oh-my-zsh/themes/custom.zsh-theme
-
-sudo ln -f IDETextKeyBindingSet.plist /Applications/Xcode.app/Contents/Frameworks/IDEKit.framework/Resources/IDETextKeyBindingSet.plist
-sudo ln -f Default.idekeybindings /Users/tyler/Library/Developer/Xcode/UserData/KeyBindings/Default.idekeybindings

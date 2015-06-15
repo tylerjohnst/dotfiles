@@ -1,44 +1,12 @@
 set nocompatible
 
-"--* VUNDLE BEGIN
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" Let Vundle manage itself
-Plugin 'gmarik/Vundle.vim'
-
-" Plugins
-Plugin 'rking/vim-detailed'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'kien/ctrlp.vim'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-surround'
-Plugin 'scrooloose/syntastic'
-
-call vundle#end()
-"--* VUNDLE END
-
 syntax on
 filetype plugin indent on
-colorscheme detailed
 
 let mapleader = ","
 
-" Include a space after commenting
-let NERDSpaceDelims=1
-
-" Ctrlp
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|bundle)|vendor|build|node_modules|\.(png|jpg|jpeg|gif)'
-
 " Clear trailing whitespace on save
 autocmd! BufWrite * mark ' | silent! %s/\s\+$// | norm ''
-
-" Refresh ctrlp buffer on save
-autocmd BufWritePost * cal ctrlp#clra()
 
 " Highlight the cursor line
 set cursorline
