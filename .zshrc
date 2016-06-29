@@ -45,6 +45,7 @@ done
 source ~/.private_exports
 
 source ~/.zsh_plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh/site-functions/_aws
 
 # Setup direnv
 eval "$(direnv hook zsh)"
