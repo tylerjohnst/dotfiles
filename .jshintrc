@@ -1,5 +1,0 @@
-{
-  "bitwise"       : true,     // Prohibit bitwise operators (&, |, ^, etc.).
-  "eqeqeq"        : true,     // Require triple equals i.e. `===`.
-  "undef"         : true     // Require all non-global variables be declared before they are used.
-}

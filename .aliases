@@ -4,6 +4,10 @@ alias fs="foreman start -f Procfile.dev"
 alias bxr="nocorrect bundle exec rspec"
 alias zrs="nocorrect zeus rspec"
 
+# Elixir Development
+alias mt="mix test"
+alias emt="iex -S mix test"
+
 # Postgres
 alias pgu="launchctl load /usr/local/opt/postgresql/homebrew.mxcl.postgresql.plist"
 alias pgd="launchctl unload /usr/local/opt/postgresql/homebrew.mxcl.postgresql.plist"
@@ -15,6 +19,9 @@ alias rdd="launchctl unload /usr/local/opt/redis/homebrew.mxcl.redis.plist"
 # MySQL
 alias msu="mysql.server start"
 alias msd="mysql.server stop"
+
+# MongoDB
+alias mdu="mongod --config /usr/local/etc/mongod.conf"
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
@@ -52,3 +59,5 @@ alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+
 alias ls="command ls -alhG"
 
 # export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
+
+alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
