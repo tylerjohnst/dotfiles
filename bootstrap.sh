@@ -10,3 +10,4 @@ done
 touch ~/.private_exports
 mkdir -p ~/.vim/swap
 ln -f theme.zsh-theme ~/.oh-my-zsh/themes/custom.zsh-theme
+git config --global core.excludesfile ~/.gitignore

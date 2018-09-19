@@ -22,3 +22,4 @@ bower_components/
 
 *.sublime-workspace
 erl_crash.dump
+.idea/

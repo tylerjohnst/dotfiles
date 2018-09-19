@@ -1,4 +1,4 @@
-export EDITOR=atom
+export EDITOR=vi
 
 # .zsh-history Length
 export HISTSIZE=1000000

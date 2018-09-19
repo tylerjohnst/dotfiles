@@ -61,3 +61,5 @@ alias ls="command ls -alhG"
 # export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
+
+alias github="/Applications/GitHub\ Desktop.app/Contents/Resources/app/static/github.sh"

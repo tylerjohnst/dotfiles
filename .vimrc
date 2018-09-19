@@ -32,3 +32,6 @@ set directory=~/.vim/swap " set a global swap path
 set wrap
 set linebreak
 set nolist  " list disables linebreak
+
+" Custom file associations
+au BufRead,BufNewFile Podfile set filetype=ruby
