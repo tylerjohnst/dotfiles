@@ -2,9 +2,7 @@
 # Run by github/github codespaces after starting
 
 # Install packages.
-apt-get install -y \
-  zsh-autosuggestions \
-  colordiff
+git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 
 for user in {root,vscode}; do
   # Always want to use ZSH as my default shell (e.g. for SSH)
