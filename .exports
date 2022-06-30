@@ -1,8 +1,0 @@
-export EDITOR=vi
-
-# .zsh-history Length
-export HISTSIZE=1000000
-
-TERM=xterm-256color
-
-export ANDROID_HOME=/usr/local/opt/android-sdk

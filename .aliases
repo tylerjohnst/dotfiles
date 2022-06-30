@@ -1,65 +1,6 @@
-# Rails development stuff
-alias bx="bundle exec"
-alias fs="foreman start -f Procfile.dev"
-alias bxr="nocorrect bundle exec rspec"
-alias zrs="nocorrect zeus rspec"
-
-# Elixir Development
-alias mt="mix test"
-alias emt="iex -S mix test"
-
-# Postgres
-alias pgu="launchctl load /usr/local/opt/postgresql/homebrew.mxcl.postgresql.plist"
-alias pgd="launchctl unload /usr/local/opt/postgresql/homebrew.mxcl.postgresql.plist"
-
-# Redis
-alias rdu="launchctl load /usr/local/opt/redis/homebrew.mxcl.redis.plist"
-alias rdd="launchctl unload /usr/local/opt/redis/homebrew.mxcl.redis.plist"
-
-# MySQL
-alias msu="mysql.server start"
-alias msd="mysql.server stop"
-
-# MongoDB
-alias mdu="mongod --config /usr/local/etc/mongod.conf"
-
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
-
-# Shortcuts
-alias d="cd ~/Documents/Dropbox"
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
-alias p="cd ~/Projects"
-alias g="git"
-alias h="history"
-alias j="jobs"
-alias v="vim"
-alias m="mate ."
-alias s="subl ."
-alias o="open"
-alias oo="open ."
-
-# Enhanced WHOIS lookups
-alias whois="whois -h whois-servers.net"
-
-# Flush Directory Service cache
-alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
-
-# IP addresses
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
-
-# Always use color output for `ls`
-alias ls="command ls -alhG"
-
-# export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
-
-alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
-
-alias github="/Applications/GitHub\ Desktop.app/Contents/Resources/app/static/github.sh"
