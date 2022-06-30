@@ -27,6 +27,8 @@ bindkey "^v" history-beginning-search-forward
 # enable autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+plugins=($plugins zsh-autosuggestions)
+
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
