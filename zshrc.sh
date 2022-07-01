@@ -35,3 +35,6 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias -- -="cd -"
+
+# Helpers for development
+alias t="bin/rails test"
