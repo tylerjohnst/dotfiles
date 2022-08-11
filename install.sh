@@ -2,6 +2,8 @@
 
 export DOTFILES_ROOT=$(pwd -P)
 
+git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+
 cat zshrc.sh >> ~/.zshrc
 
 # Install VSCode extensions
