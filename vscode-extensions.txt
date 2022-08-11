@@ -1,0 +1,6 @@
+castwide.solargraph
+ezforo.copy-relative-path-and-line-numbers
+GitHub.copilot
+sorbet.sorbet-vscode-extension
+stylelint.vscode-stylelint
+will-wow.vscode-alternate-file
