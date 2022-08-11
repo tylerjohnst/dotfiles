@@ -6,6 +6,8 @@ git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-
 
 cat zshrc.sh >> ~/.zshrc
 
+gem install solargraph pry
+
 # Install VSCode extensions
 cat vscode-extensions.txt | while read extension || [[ -n $extension ]];
 do
