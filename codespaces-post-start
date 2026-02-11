@@ -8,3 +8,9 @@
 #     sudo chsh -s /bin/zsh "$user"
 #   fi
 # done
+
+# Start the VS Code file-refresh watcher so terminal tools (Copilot CLI, etc.)
+# that modify files on disk are immediately reflected in VS Code's editor.
+if command -v vscode-file-refresh >/dev/null 2>&1; then
+  vscode-file-refresh start
+fi

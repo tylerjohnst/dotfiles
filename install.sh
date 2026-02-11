@@ -14,4 +14,10 @@ do
   code --install-extension $extension --force
 done
 
+# Install custom scripts to PATH
+mkdir -p ~/.local/bin
+for script in bin/*; do
+  [ -f "$script" ] && ln -sf "$(pwd -P)/$script" ~/.local/bin/
+done
+
 exit 0

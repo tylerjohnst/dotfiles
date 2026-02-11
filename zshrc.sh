@@ -38,3 +38,6 @@ alias -- -="cd -"
 
 # Helpers for development
 alias t="bin/rails test"
+
+# VS Code file-refresh watcher (for Copilot CLI / terminal tools)
+alias vr="vscode-file-refresh"
